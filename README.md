@@ -4,7 +4,7 @@ Esta es una aplicación móvil desarrollada en **Flutter** que consume datos abi
 
 ---
 
-## 📡 API y Endpoints Seleccionados
+## API y Endpoints Seleccionados
 
 El proyecto se nutre de la información pública de Colombia. El endpoint base utilizado es: `https://api-colombia.com/api/v1`
 
@@ -20,12 +20,12 @@ Se seleccionaron los siguientes 4 endpoints para la demostración:
 
 El código fuente está estrictamente organizado por capas de responsabilidad dentro de la carpeta `lib/` para garantizar la escalabilidad y el mantenimiento:
 
-* 📁 `config/`: Archivos de configuración global, incluyendo constantes y la abstracción segura para la carga de variables de entorno (`.env`).
-* 📁 `models/`: Clases de datos (POJOs) encargadas de modelar el dominio. Contienen los métodos de factoría `fromJson` para parsear las respuestas HTTP con tipado fuerte.
-* 📁 `routes/`: Configuración centralizada de las rutas de la aplicación.
-* 📁 `services/`: Capa de red. Contiene la lógica aislada para realizar las peticiones HTTP (`GET`) mediante el paquete `http` y manejar las excepciones.
-* 📁 `themes/`: Configuración global de diseño (Material 3), definiendo la paleta de colores colombiana y las formas orgánicas (`AppTheme`).
-* 📁 `views/`: Capa de presentación. Contiene las pantallas (Dashboard, Listado, Detalle). Solo interactúan con los servicios para solicitar datos, sin contener lógica de negocio dura.
+* `config/`: Archivos de configuración global, incluyendo constantes y la abstracción segura para la carga de variables de entorno (`.env`).
+* `models/`: Clases de datos (POJOs) encargadas de modelar el dominio. Contienen los métodos de factoría `fromJson` para parsear las respuestas HTTP con tipado fuerte.
+* `routes/`: Configuración centralizada de las rutas de la aplicación.
+* `services/`: Capa de red. Contiene la lógica aislada para realizar las peticiones HTTP (`GET`) mediante el paquete `http` y manejar las excepciones.
+* `themes/`: Configuración global de diseño (Material 3), definiendo la paleta de colores colombiana y las formas orgánicas (`AppTheme`).
+* `views/`: Capa de presentación. Contiene las pantallas (Dashboard, Listado, Detalle). Solo interactúan con los servicios para solicitar datos, sin contener lógica de negocio dura.
 
 ---
 
@@ -62,7 +62,7 @@ La pantalla de listado (`DataListView`) gestiona de forma reactiva el ciclo de v
 
 ---
 
-## 💻 Ejemplo de Respuesta JSON
+## Ejemplo de Respuesta JSON
 
 Al realizar una petición `GET` al endpoint `https://api-colombia.com/api/v1/Region`, la aplicación procesa una respuesta con esta estructura:
 
